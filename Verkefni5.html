@@ -51,7 +51,91 @@
             
         <div class="verkefni">
                 <p style="color: black;font-weight: 100;font-size: 14px;">
-             Í verkefni 5 átti að fræsa út mót og búa til hlut en vegna Covid-19 ástandsins var einungis hægt að græja hlutinn en ekki gera hann í alvörunni.
+            Í Verkefni 5 átti að fræsa út mót og steypa í það. Vegna faraldursins þurfti þó að sleppa því að steypa hlutinn og eingögnu átti að undirbúa hlutinn fyrir fræsingu. Við ákváðum að gera krók á vegg fyrir heyrnartól. Kristófer sá um hönnunina á króknum og ég sá um að undirbúa hlutinn fyrir fræsingu. Það fyrsta sem ég gerði var að hlaða upp módelinu í Fusion 360. Ég fylgdi þessu( Making TOOLPATHS and exporting G-CODES | Fusion 360 | Quick Tip - YouTube ) myndbandi við gerð G-kóðans. Það fyrsta sem maður gerir er að fara í setup og velja manufacture mode. Þar gat maður búið til setup. Þar sagðist maður vera að fræsa út hlut og valdi upphafspunkt fyrir hlutinn. Einnig breytti ég stock side offset í 0mm og stock top offset í 2mm til einföldunar.
+            </p>
+            
+            <br>
+              <img src="images/Fraesing/Fraesing1.png" style="max-width: 70%";>
+            <br>
+            
+            <p style="color: black;font-weight: 100;font-size: 14px;">
+            Næst var komið að því að undirbúa leið fyrir fræsinn. Ég valdi 2D face aðgerðina til að byrja með til þess að slétta toppinn á stockinu. Þar var ég beðinn um að velja bor. Ég valdi 4mm bor í Tutorial-metric þar sem ég var ekki viss hvernig borar eru til í Fablab.
+            </p>
+            
+            <br>
+              <img src="images/Fraesing/Fraesing2.png" style="max-width: 70%";>
+            <br>
+            
+            <p style="color: black;font-weight: 100;font-size: 14px;">
+             Þar næst valdi ég adaptive clearing aðgerðina og leyfði Fusion að búa til ferilinn án þess að breyta neinu. Ég valdi síðan simulation, breytti mode í trail og hakaði við stock til þess að fá hugmynd af því hvernig hluturinn myndi líta út.
+            </p>
+            
+            <br>
+              <img src="images/Fraesing/Fraesing3.png" style="max-width: 70%";>
+            <br>
+            
+            <p style="color: black;font-weight: 100;font-size: 14px;">
+            Ég var nokkuð sáttur við fyrsta útlitið á þessu. Þar næst var komið að finishing. Ég ákvað að nota 3d -> Horizontal skipunina til þess að gera lárétta fleti lárétta. Ég valdi jaðrana sem ég vildi að borinn héldi sig innan og valdi einnig Tool Containment -> Tool Inside Boundary.  Ég lenti í smá vandræðum með að borinn var að rekast í vegginn. Ég tók eftir því að borinn var mjög stuttur. Ég lengdi því borinn í 40mm. Ég gerði síðan það sama fyrir vinstra formið.
+            </p>
+            
+            
+             <style>
+                * {
+                    box-sizing: border-box;
+                }
+
+                .column {
+                    float: left;
+                    width: 50%;
+                    padding: 5px;
+                }
+
+                /* Clearfix (clear floats) */
+                .row::after {
+                    content: "";
+                    clear: both;
+                    display: table;
+                }
+            </style>
+                    <div class="row">
+                        <div class="column">
+                            <img src="images/Fraesing/Fraesing4.png" style="max-width: 100%";>
+                        </div>
+                        <div class="column">
+                            <img src="images/Fraesing/Fraesing5.png" style="max-width: 100%";>
+                        </div>
+                    </div>
+            
+            
+            <p style="color: black;font-weight: 100;font-size: 14px;">
+            Næst notaði ég horizontal skipunina ofan í götin vinstra megin og morphed spiral ofan á tappana hægra megin til þess að þeir myndu örugglega passa vel í götin þegar mótin væru tilbúin.
+            </p>
+            
+            <br>
+              <img src="images/Fraesing/Fraesing6.png" style="max-width: 70%";>
+            <br>
+            
+            <p style="color: black;font-weight: 100;font-size: 14px;">
+            Síðan notaði ég contour á allan hlutinn. Það virtist ekki gera mikið en það var mælt með því að nota það svo ég lét það vera inni. Loks notaði ég Parallel skipunina til þess að snyrta þetta vel. Ég hakaði við machine steep areas fyrir aukna nákvæmni.
+            </p>
+            
+            <br>
+              <img src="images/Fraesing/Fraesing8.png" style="max-width: 70%";>
+            <br>
+            
+            <p style="color: black;font-weight: 100;font-size: 14px;">
+            Að því loknu leit hluturinn nokkuð vel út. Ég var ekki viss hvernig fræsi átti að nota í fablab eða hversu mikið chip load hann þolir svo ég breytti ekki feeds né speeds. Það er þó einfalt að breyta því með því að hægri smella á aðgerðirnar og velja edit og þar er hægt að breyta öllu sem hefur áhrif á chip load.
+            </p>
+    
+            <p style="color: black;font-weight: 100;font-size: 14px;">
+            Ég tók eftir því að tíminn sem fræsingin átti að taka var tæpar 5 klst og þar langmestur tími í parallel og adaptive hlutanum. Ég ákvað því að nota frekar ball end mill fyrir þá hluta en þá náði ég tímanum niður í 1:30 klst sem var töluvert skárra. Einnig ber að nefna að það komu upp 4 viðvaranir í morphed spiral skipuninni en ég skoðaði það og það var ekkert athyglisvert í gangi þar. Hérna fylgir síðan myndband af öllu ferlinu.
+            </p>
+            
+            <video width="100%" controls>
+                                <source src="images/Fraesing/Simulation.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+            
 
             
         </div>
